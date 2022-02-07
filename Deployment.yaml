@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: javawebapp-container
-        image: docker89781/java-app:latest
+        image: docker89781/java-app:6
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
