@@ -6,6 +6,6 @@ spec:
   selector:
     app: javawebapp
   ports:
-    - port: 8765
-      targetPort: 9376
+    - port: 8080
+      targetPort: 8080
   type: LoadBalancer
