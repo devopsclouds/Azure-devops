@@ -2,7 +2,7 @@
 
 #!bin/bash
 
-echo "started to creating docker image using maveen build"
+echo "started to creating docker image using maveen builds"
 
 docker build -t docker-maven:1.0 .
 
