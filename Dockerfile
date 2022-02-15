@@ -3,7 +3,7 @@ FROM maven:3.5-jdk-8 AS build
 	COPY src ./src
 	ADD settings.xml .
 	COPY pom.xml .
-	RUN mvn -f /usr/src/app/pom.xml clean -Dmaven.test.skip=true package
+	RUN mvn -f /usr/src/app/pom.xml clean -Dmaven.test.skip=true package deploy
 	
 
 	
