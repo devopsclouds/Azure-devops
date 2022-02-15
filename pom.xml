@@ -25,6 +25,34 @@
     </dependency>
   </dependencies>
 
+<repositories>
+  <repository>
+  <id>devopsartifact8978</id>
+  <url>https://pkgs.dev.azure.com/pataballamanikanta16/Java/_packaging/devopsartifact8978/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+
+</repositories>
+<distributionManagement>
+
+  <repository>
+  <id>devopsartifact8978</id>
+  <url>https://pkgs.dev.azure.com/pataballamanikanta16/Java/_packaging/devopsartifact8978/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+
+</distributionManagement>
+
   <build>
     <plugins>
       <plugin>
