@@ -2,7 +2,10 @@
 resources:
   repositories:
   - repository: self
-    ref: refs/heads/feature
+    ref: refs/heads/develop
+trigger:
+- feature
+lockBehavior:
 jobs:
 - job: Job_1
   displayName: Agent job 1
