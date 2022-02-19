@@ -1,7 +1,7 @@
 variables:
 - group: Docker-group
 
-- name: dockerregistry
+- name: dockerregistry2
   value: $[variables.dockerregistry]
 resources:
   repositories:
@@ -23,14 +23,14 @@ jobs:
     inputs:
       containerregistrytype: Container Registry
       dockerRegistryEndpoint: 693c46d7-7adc-4165-8d18-8c092279104c
-      imageName: $(dockerregistry)/java-app2:$(Build.BuildId)
+      imageName: ${dockerregistry2}/java-app2:$(Build.BuildId)
   - task: Docker@0
     displayName: Push an image
     inputs:
       containerregistrytype: Container Registry
       dockerRegistryEndpoint: 693c46d7-7adc-4165-8d18-8c092279104c
       action: Push an image
-      imageName: $(dockerregistry)/java-app2:$(Build.BuildId)
+      imageName: ${dockerregistry2}/java-app2:$(Build.BuildId)
   - task: CopyFiles@2
     displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
     inputs:
