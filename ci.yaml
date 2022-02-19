@@ -6,7 +6,7 @@ resources:
 
 trigger:
 - feature
-lockBehavior:
+
 jobs:
 - job: Job_1
   displayName: Agent job 1
