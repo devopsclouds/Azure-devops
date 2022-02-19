@@ -1,8 +1,8 @@
 variables:
 - group: Docker-group
 
-  - name: dockerregistry2
-    value: $[variables.dockerregistry]
+- name: dockerregistry2
+  value: $[variables.dockerregistry]
 resources:
   repositories:
   - repository: self
