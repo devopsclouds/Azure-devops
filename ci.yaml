@@ -1,7 +1,7 @@
 
 resources:
   repositories:
-  - repository: java-app
+  - repository: self
     ref: refs/heads/feature
 jobs:
 - job: Job_1
@@ -9,7 +9,7 @@ jobs:
   pool:
     name: linux-8978
   steps:
-  - checkout: java-app
+  - checkout: self
   - task: Docker@0
     displayName: Build an image
     inputs:
