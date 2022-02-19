@@ -1,4 +1,4 @@
-name: $(date:yyyyMMdd)$(rev:.r)
+
 resources:
   repositories:
   - repository: java-app
