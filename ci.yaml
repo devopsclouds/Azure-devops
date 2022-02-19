@@ -1,0 +1,36 @@
+resources:
+  repositories:
+  - repository: self
+    ref: refs/heads/develop
+
+trigger:
+- develop
+
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    name: linux-8978
+  steps:
+  - checkout: self
+  - task: Docker@0
+    displayName: Build an image
+    inputs:
+      containerregistrytype: Container Registry
+      dockerRegistryEndpoint: 693c46d7-7adc-4165-8d18-8c092279104c
+      imageName: docker89781/java-app2:$(Build.BuildId)
+  - task: Docker@0
+    displayName: Push an image
+    inputs:
+      containerregistrytype: Container Registry
+      dockerRegistryEndpoint: 693c46d7-7adc-4165-8d18-8c092279104c
+      action: Push an image
+      imageName: docker89781/java-app2:$(Build.BuildId)
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+    inputs:
+      Contents: '*.yaml'
+      TargetFolder: $(build.artifactstagingdirectory)
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+...
