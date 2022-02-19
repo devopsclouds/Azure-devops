@@ -1,4 +1,7 @@
 variables:
+
+- name: hello
+  value: world
 - group: Docker-group
 
 - name: dockerregistry2
