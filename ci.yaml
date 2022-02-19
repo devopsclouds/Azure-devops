@@ -2,10 +2,10 @@
 resources:
   repositories:
   - repository: self
-    ref: refs/heads/feature
+    ref: refs/heads/develop
 
 trigger:
-- develop
+- feature
 
 jobs:
 - job: Job_1
