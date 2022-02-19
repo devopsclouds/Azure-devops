@@ -5,7 +5,7 @@ resources:
     ref: refs/heads/develop
 
 trigger:
-- feature
+- develop
 
 jobs:
 - job: Job_1
