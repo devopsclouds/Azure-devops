@@ -7,7 +7,7 @@ FROM maven:3.5-jdk-8 AS build
 # Copy maven settings, containing repository configurations
 	COPY settings.xml /root/.m2
 	
-	RUN mvn -f /usr/src/app/pom.xml clean -Dmaven.test.skip=true package deploy
+	RUN mvn -s /root/.m2/settings.xml clean -Dmaven.test.skip=true package deploy
 	
 
 	
