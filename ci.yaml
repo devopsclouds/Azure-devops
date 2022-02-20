@@ -1,7 +1,4 @@
-resources:
-    repositories:
-    - repository: self
-      ref: refs/heads/develop
+
 
 trigger:
 - develop
