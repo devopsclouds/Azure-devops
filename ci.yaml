@@ -1,4 +1,7 @@
-
+ resources:
+      repositories:
+      - repository: self
+        ref: refs/heads/feature
 
 trigger:
 - develop
@@ -15,10 +18,7 @@ stages:
     pool:
       name: linux-8978
     
-    resources:
-      repositories:
-      - repository: self
-        ref: refs/heads/develop
+   
     steps:
     - checkout: self
     - task: Docker@0
@@ -51,10 +51,7 @@ stages:
     pool:
       name: linux-8978
     
-    resources:
-      repositories:
-      - repository: self
-        ref: refs/heads/feature
+    
     steps:
     - checkout: self
     - task: Docker@0
