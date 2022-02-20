@@ -8,9 +8,9 @@ stages:
 - stage: BuildApp1
   displayName: Build
   resources:
-  repositories:
-  - repository: self
-    ref: refs/heads/develop
+    repositories:
+    - repository: self
+      ref: refs/heads/develop
 
   jobs:
   - job: Job_1
@@ -43,9 +43,9 @@ stages:
 - stage: BuildApp2
   displayName: Build2
   resources:
-  repositories:
-  - repository: self
-    ref: refs/heads/feature
+    repositories:
+    - repository: self
+      ref: refs/heads/feature
   jobs:
   - job: Job_2
     displayName: Agent job 1
