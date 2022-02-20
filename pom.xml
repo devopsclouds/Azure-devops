@@ -27,8 +27,8 @@
 
 <repositories>
   <repository>
-  <id>newconnect</id>
-  <url>https://pkgs.dev.azure.com/pataballamanikanta16/Java/_packaging/newconnect/maven/v1</url>
+  <id>devops8978</id>
+  <url>https://pkgs.dev.azure.com/pataballamanikanta16/Java/_packaging/devops8978/maven/v1</url>
   <releases>
     <enabled>true</enabled>
   </releases>
@@ -41,8 +41,8 @@
 <distributionManagement>
 
   <repository>
-  <id>newconnect</id>
-  <url>https://pkgs.dev.azure.com/pataballamanikanta16/Java/_packaging/newconnect/maven/v1</url>
+  <id>devops8978</id>
+  <url>https://pkgs.dev.azure.com/pataballamanikanta16/Java/_packaging/devops8978/maven/v1</url>
   <releases>
     <enabled>true</enabled>
   </releases>
