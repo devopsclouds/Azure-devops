@@ -17,6 +17,11 @@ stages:
     displayName: Agent job 1
     pool:
       name: linux-8978
+    
+    resources:
+      repositories:
+      - repository: self
+        ref: refs/heads/develop
     steps:
     - checkout: self
     - task: Docker@0
@@ -48,6 +53,11 @@ stages:
     displayName: Agent job 1
     pool:
       name: linux-8978
+    
+    resources:
+      repositories:
+      - repository: self
+        ref: refs/heads/feature
     steps:
     - checkout: self
     - task: Docker@0
