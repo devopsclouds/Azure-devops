@@ -3,7 +3,6 @@ trigger:
 - feature
 
 variables:
-
 - name: hello
   value: world
 - group: Docker-group
