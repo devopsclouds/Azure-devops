@@ -1,6 +1,12 @@
-trigger:
-- develop
-- feature
+resources:
+  repositories:
+  - repository: self
+    ref: refs/heads/feature
+
+
+
+
+
 
 
 
