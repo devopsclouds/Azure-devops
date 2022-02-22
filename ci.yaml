@@ -2,7 +2,7 @@ trigger:
 - develop
 - feature
 
- variables:
+variables:
 
 - name: hello
   value: world
