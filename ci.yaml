@@ -1,3 +1,7 @@
+trigger:
+- develop
+- feature
+
  variables:
 
 - name: hello
@@ -6,10 +10,7 @@
 
 - name: dockerregistry2
   value: $[variables.dockerregistry]
-resources:
-  repositories:
-  - repository: self
-    ref: refs/heads/develop
+
 
 
 
