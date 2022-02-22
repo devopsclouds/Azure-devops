@@ -2,6 +2,8 @@ resources:
   repositories:
   - repository: self
     ref: refs/heads/feature
+  - repository: MyAzureReposGitRepository
+
 
 
 
