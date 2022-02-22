@@ -3,9 +3,9 @@ resources:
   repositories:
   - repository: self
     ref: refs/heads/feature
+  - repository: self
+    ref: refs/heads/develop
 
-trigger:
-- feature
 
 
 stages:
