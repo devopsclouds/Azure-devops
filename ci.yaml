@@ -1,6 +1,4 @@
-trigger:
-- develop
-- feature
+
 
 variables:
 - name: hello
